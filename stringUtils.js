@@ -1,4 +1,4 @@
-function capitalize(str)
+function capitalize(str = "")
 {
     try
     {
@@ -29,7 +29,7 @@ function capitalize(str)
 } 
 
 
-function reverse(str)
+function reverse(str = "")
 {
     try
     { 
@@ -60,7 +60,7 @@ function reverse(str)
 } 
 
 
-function contains(str, substr)
+function contains(str = "", substr = "")
 {
     try
     {
