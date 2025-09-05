@@ -1,73 +1,47 @@
 const stringUtils = require("./stringUtils.js");
 
-//try
-//{
 
-    console.log("Test reverse:");
-
-    console.log(stringUtils.reverse("Launchcode"));
-  
-    console.log(stringUtils.reverse());
-    console.log(stringUtils.reverse(""));
-    console.log(stringUtils.reverse(" "));
-
-    //let myResult = stringUtils.reverse(" ");
-//console.log(myResult);
-
-
-    console.log(stringUtils.reverse(12345));
-    console.log(stringUtils.reverse(null));
-    console.log(stringUtils.reverse(undefined));
-    console.log(stringUtils.reverse(true));
-    console.log(stringUtils.reverse(false));
+console.log("Test capitalize:");
+console.log("Test 1:", stringUtils.capitalize("edward"));  
+console.log("Test 2:", stringUtils.capitalize("MARTIN"));  
+console.log("Test 3:", stringUtils.capitalize());
+console.log("Test 4:", stringUtils.capitalize(""));
+console.log("Test 5:", stringUtils.capitalize(" "));
+console.log("Test 6:", stringUtils.capitalize(12345));
+console.log("Test 7:", stringUtils.capitalize(null));
+console.log("Test 8:", stringUtils.capitalize(undefined));
+console.log("Test 9:", stringUtils.capitalize(true));
+console.log("Test 10:", stringUtils.capitalize(false));
 
 
-    console.log();
-    console.log("Test capitalize:");
-
-    console.log(stringUtils.capitalize("edward"));
-  
-    console.log(stringUtils.capitalize());
-    console.log(stringUtils.capitalize(""));
-    console.log(stringUtils.capitalize(" "));
-    console.log(stringUtils.capitalize(12345));
-    console.log(stringUtils.capitalize(null));
-    console.log(stringUtils.capitalize(undefined));
-    console.log(stringUtils.capitalize(true));
-    console.log(stringUtils.capitalize(false));
-
-
-    console.log();
-    console.log("Test contains:");
-
-    console.log(stringUtils.contains("scooby doo", "doo"));
-    console.log(stringUtils.contains("scooby doo", "scoobs"));
-    
-    //console.log(stringUtils.contains( , ));   //this wont run
-    //console.log(stringUtils.contains(, "doo"));   //this wont run
-    
-    
-    
-    console.log(stringUtils.contains("a b c", " "));
+console.log();
+console.log("Test reverse:");
+console.log("Test 1:", stringUtils.reverse("Launchcode"));  
+console.log("Test 2:", stringUtils.reverse("Scooby Snacks"));
+console.log("Test 3:", stringUtils.reverse());
+console.log("Test 4:", stringUtils.reverse(""));
+console.log("Test 5:", stringUtils.reverse(" "));
+console.log("Test 6:", stringUtils.reverse(12345));
+console.log("Test 7:", stringUtils.reverse(null));
+console.log("Test 8:", stringUtils.reverse(undefined));
+console.log("Test 9:", stringUtils.reverse(true));
+console.log("Test 10:", stringUtils.reverse(false));
 
 
-    console.log(stringUtils.contains("", "doo"));
-    console.log(stringUtils.contains("doo", ""));
-    console.log(stringUtils.contains("doo", " "));
-
-    console.log(stringUtils.contains(" "));
-    console.log(stringUtils.contains(12345));
-    console.log(stringUtils.contains("scooby", 12345));
-    console.log(stringUtils.contains(null));
-    console.log(stringUtils.contains(undefined));    
-    console.log(stringUtils.contains(true));
-    console.log(stringUtils.contains(false));
-
-
-//}
-
-//catch (err)
-//{
-//    console.error(`Error: ${err.message}`);
-//}
-
+console.log();
+console.log("Test contains:");
+console.log("Test 1:", stringUtils.contains("scooby doo", "doo"));
+console.log("Test 2:", stringUtils.contains("scooby doo", "scoobs"));
+console.log("Test 3:", stringUtils.contains("a b c", " "));
+console.log("Test 4:", stringUtils.contains("", "doo"));
+console.log("Test 5:", stringUtils.contains("doo", ""));
+console.log("Test 6:", stringUtils.contains("doo", " "));
+console.log("Test 7:", stringUtils.contains(" "));
+console.log("Test 8:", stringUtils.contains(" ", "doo"));
+console.log("Test 9:", stringUtils.contains(12345));
+console.log("Test 10:", stringUtils.contains("scooby", 12345));
+console.log("Test 11:", stringUtils.contains(null));
+console.log("Test 12:", stringUtils.contains(undefined));    
+console.log("Test 13:", stringUtils.contains(true));
+console.log("Test 14:", stringUtils.contains(false));
+        

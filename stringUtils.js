@@ -1,5 +1,3 @@
-
-
 function capitalize(str)
 {
     try
@@ -49,6 +47,7 @@ function reverse(str)
         {
             throw new Error("Blank input was provided.");
         }
+
         return str.split("").reverse().join("");
     } 
 
@@ -57,9 +56,7 @@ function reverse(str)
         console.error(`Error: ${err.message}`);
     
         return "";
-    } 
-
-    
+    }     
 } 
 
 
@@ -69,34 +66,29 @@ function contains(str, substr)
     {
         if (typeof str !== "string")
         {
-            throw new Error("Input string must be a string.");
+            throw new Error("Input string value must be a string.");
         }
 
         if (!str)
         {
-            throw new Error("No input string was provided.");
+            throw new Error("No input string value was provided.");
         }
 
         if (str.trim() === "")
         {
-            throw new Error("Blank input string was provided.");
+            throw new Error("Blank input string value was provided.");
         }
 
 
         if (typeof substr !== "string")
         {
-            throw new Error("Input substring must be a string.");
+            throw new Error("Input substring value must be a string.");
         }
 
         if (!substr)
         {
-            throw new Error("No input substring was provided.");
+            throw new Error("No input substring value was provided.");
         }
-
-//        if (substr.trim() === "")
-//        {
-//            throw new Error("Blank input substring was provided.");
-//        }
 
         return str.includes(substr);
     } 
@@ -111,7 +103,6 @@ function contains(str, substr)
 } 
 
 
-//console.log("5");
 module.exports = 
 {
     capitalize: capitalize,
@@ -119,7 +110,3 @@ module.exports =
     contains: contains
 
 };
-
-
-
-
